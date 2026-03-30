@@ -1,10 +1,10 @@
 title: VyrxAI
 description: Finish homework instantly
 
-# Remove .html extensions from URLs
+# remove file extensions
 permalink: pretty
 
-# Exclude non-page files from processing
+# dont process
 exclude:
   - README.md
   - LICENSE.md
