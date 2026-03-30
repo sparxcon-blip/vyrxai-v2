@@ -7,5 +7,4 @@
 
 Read LICENSE.md
 
-Free hosting https://pages.cloudflare.com/
-Free domains https://qzz.io/
+Hosting: https://pages.cloudflare.com/
