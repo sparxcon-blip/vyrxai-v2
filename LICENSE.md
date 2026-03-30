@@ -1,4 +1,4 @@
-Proprietary License
+**Proprietary License
 
 Copyright (c) 2026 uh.izaak. All rights reserved.
 
@@ -16,3 +16,8 @@ VyrxAI may not:
 All other rights are reserved by the Author.
 
 Any use outside the above permissions requires explicit written consent from uh.izaak.
+
+The service and all materials are provided on an 'as is' and 'as available' basis without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL UH.IZAAK OR ANY SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO USE THE PRODUCT, EVEN IF UH.IZAAK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+**
