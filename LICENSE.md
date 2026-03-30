@@ -1,23 +1,29 @@
-**Proprietary License
-
+### PROPRIETARY SOFTWARE LICENSE
 Copyright (c) 2026 uh.izaak. All rights reserved.
 
-This software and its source code are the original work of uh.izaak (the "Author").
+This software and its associated source code (the "Software") constitute the 
+original proprietary work of uh.izaak (the "Author"). 
 
-The Author hereby grants VyrxAI a non-exclusive, non-transferable licence to use,
-deploy, and display these files solely for the operation of the VyrxAI website and
-associated services.
+The Author hereby grants VyrxAI a non-exclusive, non-transferable, and 
+revocable license to use, deploy, and display the Software solely for the 
+internal operation of the VyrxAI website and its associated services.
 
-VyrxAI may not:
-- Sublicense, sell, or transfer these files to any third party
-- Remove or obscure this copyright notice or any attribution to uh.izaak
-- Use these files for any purpose outside of the VyrxAI service
+RESTRICTIONS: VyrxAI shall not:
+- Sublicense, sell, distribute, or otherwise transfer the Software to any third party;
+- Remove, alter, or obscure any copyright notices or proprietary attributions;
+- Utilize the Software for any purpose external to the VyrxAI service.
 
-All other rights are reserved by the Author.
+All rights not expressly granted herein are reserved by the Author. Any use 
+exceeding the scope of this license requires prior written consent from the Author.
 
-Any use outside the above permissions requires explicit written consent from uh.izaak.
+DISCLAIMER OF WARRANTIES: THE SOFTWARE IS PROVIDED ON AN "AS IS" AND "AS 
+AVAILABLE" BASIS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
 
-The service and all materials are provided on an 'as is' and 'as available' basis without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL UH.IZAAK OR ANY SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO USE THE PRODUCT, EVEN IF UH.IZAAK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-**
+LIMITATION OF LIABILITY: TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, 
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, 
+OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES 
+FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA) ARISING OUT OF 
+THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF THE AUTHOR HAS BEEN 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
