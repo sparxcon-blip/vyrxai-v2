@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VyrxAI Privacy Policy</title>
+  <title>VyrxAI Pricing</title>
+  <meta name="description" content="Simple, transparent pricing. Start free or go lifetime." />
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -30,9 +31,32 @@
   </div>
 
   <main>
-    <div class="prose-page">
-      <h1 class="grad-text">Privacy Policy</h1>
-      <p>add ur privacy policy in /privacy.html</p>
+    <div class="container">
+      <div class="inner-page">
+
+        <div style="text-align:center;" data-aos>
+          <div class="section-label" style="justify-content:center;">
+            <span class="grad-label">Simple pricing</span>
+          </div>
+        </div>
+
+        <h1 class="grad-text" data-aos data-aos-delay="50">Pricing</h1>
+
+        <p class="lead" data-aos data-aos-delay="100">
+          No subscriptions. No hidden fees. Pay once, own it forever — or try it free.
+        </p>
+
+        <!-- Plans rendered by main.js from config.js -->
+        <div class="pricing-grid" id="pricing-container" data-aos data-aos-delay="150">
+          <!-- Populated by main.js -->
+        </div>
+
+        <p class="pricing-footnote" data-aos>
+          All purchases are handled via Discord. Questions?
+          <a id="pricing-discord-link" href="#" target="_blank" rel="noopener noreferrer">Join our server →</a>
+        </p>
+
+      </div>
     </div>
   </main>
 
@@ -42,7 +66,10 @@
         <img src="images/footer-illustration.svg" width="1076" height="378" alt="" style="max-width:none;" />
       </div>
       <div class="footer-row">
-        <a class="logo" href="/"><img src="images/logo.svg" alt="" /><span class="logo-name">VyrxAI</span></a>
+        <a class="logo" href="/" aria-label="VyrxAI">
+          <img src="images/logo.svg" alt="VyrxAI logo" />
+          <span class="logo-name">VyrxAI</span>
+        </a>
         <div class="footer-links">
           <a href="/terms">Terms</a>
           <a href="/privacy">Privacy</a>
@@ -53,3 +80,8 @@
     </div>
   </footer>
 
+  <script src="config.js"></script>
+  <script src="testimonials.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
