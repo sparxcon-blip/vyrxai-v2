@@ -1,0 +1,14 @@
+title: VyrxAI
+description: Finish homework instantly
+
+# Remove .html extensions from URLs
+permalink: pretty
+
+# Exclude non-page files from processing
+exclude:
+  - README.md
+  - LICENSE.md
+  - LICENSE
+  - config.js
+  - testimonials.js
+  - videos/READTHIS.md
