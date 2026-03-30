@@ -1,57 +1,57 @@
 // ============================================================
-// VyrxAI — Testimonials Configuration
+// change placeholder testimnials 
 // Copyright (c) 2026 uh.izaak. All rights reserved.
 // ============================================================
 // Add or edit reviews below.
-//   name    — display name
-//   message — their review
-//   label   — service used e.g. "Sparx Maths"
+//   name    — review name/username
+//   message — review text
+//   label   — eg sparx maths
 // ============================================================
 
 const TESTIMONIALS = [
   {
-    name: "Alex T.",
-    message: "Finished my entire Sparx Maths homework in under 2 minutes. Genuinely couldn't believe it worked that well.",
-    label: "Sparx Maths",
+    name: "name",
+    message: "edit all of ts in /testimonials.js",
+    label: "name of service",
   },
   {
-    name: "Jamie R.",
-    message: "The simulated time feature is so clever — everything looks completely natural. 10/10.",
-    label: "Sparx Maths",
+    name: "name",
+    message: "review",
+    label: "service",
   },
   {
-    name: "Sophie L.",
-    message: "Sparx Reader used to take me forever. Now it's done before I've even made a snack.",
-    label: "Sparx Reader",
+    name: "name",
+    message: "review.",
+    label: "service",
   },
   {
-    name: "Callum B.",
-    message: "Set up the schedule and forgot about it. Homework just gets done automatically every week.",
-    label: "Sparx Maths",
+    name: "name",
+    message: "review",
+    label: "service",
   },
   {
-    name: "Priya M.",
-    message: "Cheapest option I found by miles, and it actually works. Don't sleep on this.",
+    name: "@j29388",
+    message: "im making money from doing other ppls homework with ts",
     label: "Sparx Science",
   },
   {
-    name: "Ethan W.",
-    message: "98.5% satisfaction rate isn't a lie. I was sceptical but it's been flawless for months.",
+    name: "@ethan124",
+    message: "i set up the schedule last month and havent opened sparx since",
     label: "Sparx Reader",
   },
   {
-    name: "Mia H.",
-    message: "Science homework done in seconds. The accuracy is insane for how fast it is.",
-    label: "Sparx Science",
+    name: "name",
+    message: "review",
+    label: "service",
   },
   {
-    name: "Luca F.",
-    message: "Tried a few tools before this. Nothing comes close for Sparx specifically.",
-    label: "Sparx Maths",
+    name: "name",
+    message: "review.",
+    label: "service",
   },
   {
-    name: "Isla D.",
-    message: "Privacy was my main concern and they clearly take it seriously. Feel safe using it.",
-    label: "Sparx Maths",
+    name: "name",
+    message: "review",
+    label: "service",
   },
 ];
