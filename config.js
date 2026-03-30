@@ -1,13 +1,13 @@
 // ============================================================
-// VyrxAI placeholders config
+// price placeholders config
 // Copyright (c) 2026 uh.izaak. All rights reserved.
 // Unauthorised copying or distribution is prohibited.
 // ============================================================
-// This is the ONLY file you need to edit.
+// add ur discord invte and pricing here
 // ============================================================
 
 const SITE_CONFIG = {
-  discordLink: "https://discord.gg/YOUR_INVITE_HERE",
+  discordLink: "https://discord.gg/inv",
 
   plans: [
     {
@@ -16,8 +16,8 @@ const SITE_CONFIG = {
       priceLabel: "forever",
       description: "Get started for free.",
       features: [
-        "1 use per day",
         "3 day trial",
+        "1 use per day",
         "Basic accuracy",
         "Discord support",
       ],
