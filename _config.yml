@@ -9,6 +9,4 @@ exclude:
   - README.md
   - LICENSE.md
   - LICENSE
-  - config.js
-  - testimonials.js
   - videos/READTHIS.md
