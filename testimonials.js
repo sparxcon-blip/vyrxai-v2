@@ -3,9 +3,9 @@
 // Copyright (c) 2026 uh.izaak. All rights reserved.
 // ============================================================
 // Add or edit reviews below.
-//   name    — review name/username
-//   message — review text
-//   label   — eg sparx maths
+//   name:    review name/username
+//   message: review text
+//   label:   eg sparx maths
 // ============================================================
 
 const TESTIMONIALS = [
