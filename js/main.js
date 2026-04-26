@@ -195,11 +195,12 @@ function initTextReveal() {
       if (!entry.isIntersecting) return;
       const words = entry.target.querySelectorAll('.reveal-word');
       words.forEach((w, i) => {
-        setTimeout(() => w.classList.add('reveal-word--visible'), i * 50);
+        // 200ms base delay so user has time to see the element before words animate
+        setTimeout(() => w.classList.add('reveal-word--visible'), 200 + i * 55);
       });
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.25 });
 
   els.forEach(el => observer.observe(el));
 }
@@ -310,6 +311,32 @@ function wireDiscordLinks() {
   });
 }
 
+
+/* ── Mobile platform auto-scroll ─────────────────────────── */
+function initPlatformAutoScroll() {
+  const grid = document.querySelector('.platforms-grid');
+  if (!grid) return;
+  // Only run on mobile (touch) where the grid is a flex scroll container
+  if (!window.matchMedia('(max-width: 639px)').matches) return;
+  let pos = 0;
+  let paused = false;
+  const speed = 0.6; // px per frame
+
+  grid.addEventListener('touchstart', () => { paused = true; }, { passive: true });
+  grid.addEventListener('touchend', () => { paused = false; }, { passive: true });
+
+  function tick() {
+    if (!paused) {
+      pos += speed;
+      // Loop: when we've scrolled past half the content, reset to start
+      if (pos >= grid.scrollWidth / 2) pos = 0;
+      grid.scrollLeft = pos;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
 /* ── Init ────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   renderTestimonials();
@@ -327,4 +354,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardSpotlight();
   initHeaderScroll();
   initMobileMenu();
+  initPlatformAutoScroll();
 });
