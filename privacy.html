@@ -10,11 +10,17 @@
 </head>
 <body>
 
-  <header>
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <header id="site-header">
     <div class="header-inner">
       <div class="header-bar">
         <a class="logo" href="/" aria-label="VyrxAI">
-          <img src="images/logo.svg" alt="VyrxAI logo" />
+          <img src="images/logo.svg" alt="VyrxAI logo" onerror="this.src='images/logo.png'" />
           <span class="logo-name">VyrxAI</span>
         </a>
         <nav class="nav-links">
@@ -42,7 +48,7 @@
         <img src="images/footer-illustration.svg" width="1076" height="378" alt="" style="max-width:none;" />
       </div>
       <div class="footer-row">
-        <a class="logo" href="/"><img src="images/logo.svg" alt="" /><span class="logo-name">VyrxAI</span></a>
+        <a class="logo" href="/"><img src="images/logo.svg" alt="VyrxAI logo" onerror="this.src='images/logo.png'" /><span class="logo-name">VyrxAI</span></a>
         <div class="footer-links">
           <a href="/terms">Terms</a>
           <a href="/privacy">Privacy</a>
