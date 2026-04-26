@@ -1,366 +1,372 @@
 <!DOCTYPE html>
+<!-- Copyright (c) 2026 ArcAI. All rights reserved. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>ArcAI — Finish homework instantly</title>
+  <meta name="description" content="Sparx Maths, Reader and Science finished in seconds. Undetectable. Available 24/7." />
   <link rel="icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- Ambient background -->
-<div class="bg-blobs" aria-hidden="true">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-  <div class="blob blob-4"></div>
-</div>
-<div class="bg-grid" aria-hidden="true"></div>
+  <!-- Ambient blobs -->
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-<!-- ── Header ── -->
-<header id="site-header">
-  <div class="header-inner">
-    <div class="header-bar">
-      <a href="/" class="logo" aria-label="ArcAI home">
-        <img src="favicon.ico" alt="" width="28" height="28" />
-        <span class="logo-name">ArcAI</span>
-      </a>
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="header-bar">
+        <a class="logo" href="/" aria-label="ArcAI">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-name">ArcAI</span>
+        </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="pricing.html" class="nav-link">Pricing</a>
-      </nav>
+        <!-- Desktop nav -->
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="dashboard.html" class="btn btn-sm btn-secondary">Dashboard</a>
+          <a href="https://discord.gg/inv" data-discord class="btn btn-sm btn-primary magnetic">Get Started</a>
+        </nav>
 
-      <div style="display:flex;align-items:center;gap:0.5rem;">
-        <a href="dashboard.html" class="btn btn-secondary btn-sm" style="display:none;" id="nav-dashboard">Dashboard</a>
-        <a href="#" data-discord class="btn btn-primary btn-sm magnetic">Get Started</a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span class="ham-line"></span>
-          <span class="ham-line"></span>
-          <span class="ham-line"></span>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
 
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <nav class="mobile-nav">
-        <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <nav>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="https://discord.gg/inv" data-discord class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Get Started</a>
       </nav>
-      <div class="mobile-ctas">
-        <a href="dashboard.html" class="btn btn-secondary" style="width:100%;justify-content:center;">Dashboard</a>
-        <a href="#" data-discord class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
-      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ── Hero ── -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-header">
+  <main>
 
-        <h1 class="reveal-text">
-          Finish homework&nbsp;<span class="grad-text">instantly</span>
-        </h1>
+    <!-- ── Hero ─────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-header">
+            <h1 class="reveal-text">Finish homework <span class="grad-text">instantly</span></h1>
+            <p class="hero-sub" data-aos data-aos-delay="120">
+              Sparx Maths, Reader &amp; Science done in seconds.<br>Undetectable. Available 24/7.
+            </p>
+            <div class="hero-ctas" data-aos data-aos-delay="260">
+              <a href="https://discord.gg/inv" data-discord class="btn btn-primary magnetic">
+                Get Started <span class="btn-arrow">→</span>
+              </a>
+              <a href="dashboard.html" class="btn btn-secondary">Dashboard</a>
+            </div>
+          </div>
 
-        <p class="hero-sub">
-          Sparx Maths, Reader &amp; Science done in seconds.<br>
-          Undetectable. Available 24/7.
-        </p>
+          <!-- Stats strip -->
+          <div class="stats-strip" data-aos data-aos-delay="200">
+            <div class="stat-item">
+              <span class="stat-number" data-target="2000" data-suffix="K+">0</span>
+              <span class="stat-label">Students Helped</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="500" data-suffix="K+">0</span>
+              <span class="stat-label">Questions Done</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="6" data-suffix="K+">0</span>
+              <span class="stat-label">Hours Saved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="hero-ctas">
-          <a href="#" data-discord class="btn btn-primary magnetic">
-            <span class="btn-icon-gap">
-              Get Started
-              <svg class="btn-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
+    <!-- ── Features ─────────────────────────────────────── -->
+    <section class="section-features">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-header" data-aos>
+            <h2 class="reveal-text">Built to get your homework done</h2>
+            <p class="reveal-text section-sub">Undetectable. Never get caught.</p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-item zx-card" data-aos>
+              <div class="zx-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor">
+                  <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" fill-opacity=".48"/>
+                  <path d="M12 6v6l4 2-1 1.73-5-2.5V6H12Z"/>
+                </svg>
+              </div>
+              <h3>Quick To Use</h3>
+              <p>Done in seconds with customisable simulated time. No setup headaches, just results.</p>
+            </article>
+
+            <article class="feature-item zx-card" data-aos data-aos-delay="60">
+              <div class="zx-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor">
+                  <path fill-opacity=".48" d="M7 8V0H5v8h2Zm12 16v-4h-2v4h2Z"/>
+                  <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z"/>
+                </svg>
+              </div>
+              <h3>Schedules</h3>
+              <p>Automate homework every week, fortnight or month.</p>
+            </article>
+
+            <article class="feature-item zx-card" data-aos data-aos-delay="120">
+              <div class="zx-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor">
+                  <path fill-opacity=".48" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Z"/>
+                  <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7Z"/>
+                </svg>
+              </div>
+              <h3>Low Price</h3>
+              <p>Cheapest one out there. No subscriptions, pay once.</p>
+            </article>
+
+            <article class="feature-item zx-card" data-aos data-aos-delay="60">
+              <div class="zx-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor">
+                  <path d="M23.414 6 18 .586 16.586 2l3 3H7a6 6 0 0 0-6 6h2a4 4 0 0 1 4-4h12.586l-3 3L18 11.414 23.414 6Z"/>
+                  <path fill-opacity=".48" d="M13.01 12.508a2.5 2.5 0 0 0-3.502.482L1.797 23.16.203 21.952l7.71-10.17a4.5 4.5 0 1 1 7.172 5.437l-4.84 6.386-1.594-1.209 4.841-6.385a2.5 2.5 0 0 0-.482-3.503Z"/>
+                </svg>
+              </div>
+              <h3>Advanced Solving</h3>
+              <p>Get even the hardest problems right, every time.</p>
+            </article>
+
+            <article class="feature-item zx-card" data-aos data-aos-delay="120">
+              <div class="zx-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor">
+                  <path fill-opacity=".48" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2Z"/>
+                </svg>
+              </div>
+              <h3>High Rated</h3>
+              <p>98.5% satisfaction rate from all users.</p>
+            </article>
+
+            <article class="feature-item zx-card" data-aos data-aos-delay="180">
+              <div class="zx-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor">
+                  <path fill-opacity=".48" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4Z"/>
+                  <path d="M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8Z"/>
+                </svg>
+              </div>
+              <h3>Privacy First</h3>
+              <p>We take every precaution to keep your data safe.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Platforms ─────────────────────────────────────── -->
+    <section class="section-platforms">
+      <div class="container">
+        <div style="padding-bottom:3rem;">
+          <div class="section-header" data-aos>
+            <h2 class="reveal-text">Works with your platforms</h2>
+            <p class="reveal-text section-sub">Seamlessly integrated with the tools your school already uses.</p>
+          </div>
+
+          <div class="platforms-grid">
+            <div class="platform-card zx-card" data-aos>
+              <div class="platform-card-inner">
+                <div class="platform-logo-wrap">
+                  <img src="https://www.cotham.bristol.sch.uk/_site/data/files/images/weblinks/29D3730839A2FEB2FAA8721878AF5EE4.jpg" alt="Sparx Maths" />
+                </div>
+                <h3>Sparx Maths</h3>
+                <ul class="platform-features">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>99% accuracy</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Done in seconds</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Custom simulated time</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="platform-card zx-card" data-aos data-aos-delay="80">
+              <div class="platform-card-inner">
+                <div class="platform-logo-wrap">
+                  <img src="https://pbs.twimg.com/profile_images/1862441905457422336/MvSI4Nra_400x400.jpg" alt="Sparx Reader" />
+                </div>
+                <h3>Sparx Reader</h3>
+                <ul class="platform-features">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>98% accuracy</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Name changer</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Quick setup</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="platform-card zx-card" data-aos data-aos-delay="160">
+              <div class="platform-card-inner">
+                <div class="platform-logo-wrap">
+                  <img src="https://pbs.twimg.com/profile_images/1862442059614797824/T3VOTm2I_400x400.jpg" alt="Sparx Science" />
+                </div>
+                <h3>Sparx Science</h3>
+                <ul class="platform-features">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>96% accuracy</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Quick setup</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Done in seconds</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="platform-card zx-card platform-card--transparent" data-aos data-aos-delay="240">
+              <div class="platform-card-inner">
+                <div class="platform-logo-wrap platform-logo-wrap--transparent">
+                  <img src="https://www.carousel-learning.com/wp-content/uploads/2021/03/carousel-logo.png" alt="Seneca" />
+                </div>
+                <h3>Seneca</h3>
+                <ul class="platform-features">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Smart answers</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>All subjects</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Instant results</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="platform-card zx-card" data-aos data-aos-delay="320">
+              <div class="platform-card-inner">
+                <div class="platform-logo-wrap">
+                  <img src="https://www.languagenut.com/wp-content/uploads/2022/09/languagenut-logo.png" alt="Languagenut" />
+                </div>
+                <h3>Languagenut</h3>
+                <ul class="platform-features">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>All languages</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Vocab &amp; tasks</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M11.707 3.293a1 1 0 0 0-1.414 0L5 8.586 3.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414Z" fill="currentColor"/></svg>Quick setup</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ──────────────────────────────────── -->
+    <section class="section-reviews">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-header" data-aos>
+            <h2 class="reveal-text">Loved by students</h2>
+            <p class="reveal-text section-sub">Join thousands who already use ArcAI every week.</p>
+          </div>
+          <div class="reviews-marquee-wrap" data-aos>
+            <div class="reviews-marquee">
+              <div class="reviews-track" id="reviews-track-1"></div>
+            </div>
+          </div>
+          <div class="reviews-marquee-wrap reviews-marquee-wrap--reverse" data-aos data-aos-delay="100">
+            <div class="reviews-marquee">
+              <div class="reviews-track reviews-track--reverse" id="reviews-track-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ───────────────────────────────────────────── -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <h2 class="reveal-text" data-aos>Ready to finish your homework?</h2>
+          <p class="cta-sub" data-aos data-aos-delay="80">Join thousands of students saving hours every week.</p>
+          <div data-aos data-aos-delay="180">
+            <a href="https://discord.gg/inv" data-discord class="btn btn-primary magnetic">
+              Get Started <span class="btn-arrow">→</span>
+            </a>
+            <a href="dashboard.html" class="btn btn-secondary" style="margin-left:0.75rem;">Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand col -->
+        <div class="footer-brand">
+          <a class="logo" href="/" aria-label="ArcAI">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-name">ArcAI</span>
           </a>
-          <a href="dashboard.html" class="btn btn-secondary magnetic">Dashboard</a>
+          <p class="footer-tagline">The fastest way to finish your homework. Undetectable, instant, and always available.</p>
+          <a href="https://discord.gg/inv" data-discord class="btn btn-sm btn-secondary" style="width:fit-content;gap:0.5rem;">
+            <svg class="discord-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03Z"/>
+            </svg>
+            Join Discord
+          </a>
+        </div>
+
+        <!-- Product col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Product</h4>
+          <ul>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="https://discord.gg/inv" data-discord>Get Started</a></li>
+          </ul>
+        </div>
+
+        <!-- Platforms col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Platforms</h4>
+          <ul>
+            <li><a href="#">Sparx Maths</a></li>
+            <li><a href="#">Sparx Reader</a></li>
+            <li><a href="#">Sparx Science</a></li>
+            <li><a href="#">Seneca</a></li>
+            <li><a href="#">Languagenut</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="license.html">Refund Policy</a></li>
+          </ul>
         </div>
 
       </div>
 
-      <!-- Stats strip -->
-      <div class="stats-strip" data-aos>
-        <div class="stat-item">
-          <span class="stat-number" data-target="2000" data-suffix="K+">0K+</span>
-          <span class="stat-label">Students Helped</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="500" data-suffix="K+">0K+</span>
-          <span class="stat-label">Questions Done</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="6" data-suffix="K+">0K+</span>
-          <span class="stat-label">Hours Saved</span>
+      <div class="footer-bottom">
+        <p>© 2026 ArcAI. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="https://discord.gg/inv" data-discord>Discord</a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ── Features ── -->
-<section class="section-divider">
-  <div class="container">
-    <div class="section-inner">
-
-      <div class="section-header">
-        <h2 class="reveal-text">Built to get your homework done</h2>
-        <p>Undetectable. Never get caught.</p>
-      </div>
-
-      <div class="features-grid">
-
-        <div class="feature-item zx-card" data-aos data-aos-delay="0">
-          <div class="zx-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Quick To Use</h3>
-          <p>Done in seconds with customisable simulated time. No setup headaches, just results.</p>
-        </div>
-
-        <div class="feature-item zx-card" data-aos data-aos-delay="80">
-          <div class="zx-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </div>
-          <h3>Schedules</h3>
-          <p>Automate homework every week, fortnight or month.</p>
-        </div>
-
-        <div class="feature-item zx-card" data-aos data-aos-delay="160">
-          <div class="zx-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </div>
-          <h3>Low Price</h3>
-          <p>Cheapest on the market. No subscriptions.</p>
-        </div>
-
-        <div class="feature-item zx-card" data-aos data-aos-delay="0">
-          <div class="zx-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          </div>
-          <h3>Advanced Solving</h3>
-          <p>Gets even the hardest problems right.</p>
-        </div>
-
-        <div class="feature-item zx-card" data-aos data-aos-delay="80">
-          <div class="zx-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h3>High Rated</h3>
-          <p>98.5% satisfaction rate from all users.</p>
-        </div>
-
-        <div class="feature-item zx-card" data-aos data-aos-delay="160">
-          <div class="zx-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Privacy First</h3>
-          <p>Every precaution taken to keep your data safe.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Platforms ── -->
-<section class="section-divider">
-  <div class="container">
-    <div class="section-inner">
-
-      <div class="section-header">
-        <h2 class="reveal-text">Works with your platforms</h2>
-        <p>Seamlessly integrated with the tools your school already uses.</p>
-      </div>
-
-      <div class="platforms-grid" id="platforms-grid">
-        <!-- Rendered by JS from config or static fallback below -->
-        <div class="platform-card zx-card" data-aos data-aos-delay="0">
-          <div class="platform-card-inner">
-            <div class="platform-logo-wrap">
-              <img src="images/sparx.png" alt="Sparx Maths" />
-            </div>
-            <h3>Sparx Maths</h3>
-          </div>
-        </div>
-        <div class="platform-card zx-card" data-aos data-aos-delay="60">
-          <div class="platform-card-inner">
-            <div class="platform-logo-wrap">
-              <img src="images/sparxreader.png" alt="Sparx Reader" />
-            </div>
-            <h3>Sparx Reader</h3>
-          </div>
-        </div>
-        <div class="platform-card zx-card" data-aos data-aos-delay="120">
-          <div class="platform-card-inner">
-            <div class="platform-logo-wrap">
-              <img src="images/sparxscience.png" alt="Sparx Science" />
-            </div>
-            <h3>Sparx Science</h3>
-          </div>
-        </div>
-        <div class="platform-card zx-card" data-aos data-aos-delay="180">
-          <div class="platform-card-inner">
-            <div class="platform-logo-wrap platform-logo-wrap--transparent">
-              <img src="images/seneca.png" alt="Seneca" />
-            </div>
-            <h3>Seneca</h3>
-          </div>
-        </div>
-        <div class="platform-card zx-card" data-aos data-aos-delay="240">
-          <div class="platform-card-inner">
-            <div class="platform-logo-wrap platform-logo-wrap--transparent">
-              <img src="images/languagenut.png" alt="Languagenut" />
-            </div>
-            <h3>Languagenut</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── Reviews ── -->
-<section class="section-divider">
-  <div class="container">
-    <div class="section-inner">
-
-      <div class="section-header">
-        <h2 class="reveal-text">Loved by students</h2>
-        <p>Join thousands who already use ArcAI every week.</p>
-      </div>
-
-      <div class="reviews-marquee-wrap">
-        <div class="reviews-marquee">
-          <div class="reviews-track" id="reviews-track-1"></div>
-        </div>
-      </div>
-      <div class="reviews-marquee-wrap" style="margin-top:1rem;">
-        <div class="reviews-marquee">
-          <div class="reviews-track reviews-track--reverse" id="reviews-track-2"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── Pricing CTA ── -->
-<section class="section-divider pricing-cta-section">
-  <div class="container">
-    <div class="pricing-cta-inner" data-aos>
-      <div class="pricing-cta-text">
-        <h2 class="reveal-text">Simple, honest pricing</h2>
-        <p>No subscriptions. Pay once, use forever.</p>
-      </div>
-      <div class="pricing-cta-btn">
-        <a href="pricing.html" class="btn btn-primary magnetic">
-          <span class="btn-icon-gap">
-            View Pricing
-            <svg class="btn-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Final CTA ── -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-inner">
-      <h2 class="reveal-text">Ready to finish your homework?</h2>
-      <p class="cta-sub">Join thousands of students saving hours every week.</p>
-      <div class="cta-btns">
-        <a href="#" data-discord class="btn btn-primary magnetic">
-          <span class="btn-icon-gap">
-            Get Started
-            <svg class="btn-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
-        </a>
-        <a href="dashboard.html" class="btn btn-secondary magnetic">Dashboard</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Footer ── -->
-<footer>
-  <div class="footer-top-line"></div>
-  <div class="footer-inner">
-    <div class="footer-grid">
-
-      <!-- Brand -->
-      <div class="footer-brand">
-        <a href="/" class="logo">
-          <img src="favicon.ico" alt="" width="24" height="24" />
-          <span class="logo-name">ArcAI</span>
-        </a>
-        <p class="footer-tagline">The fastest way to finish your homework. Undetectable, instant, and always available.</p>
-        <a href="#" data-discord class="btn btn-secondary btn-sm footer-discord-btn magnetic">
-          <svg class="discord-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
-          </svg>
-          Join Discord
-        </a>
-      </div>
-
-      <!-- Product -->
-      <div class="footer-col">
-        <span class="footer-col-heading">Product</span>
-        <ul class="footer-col-links">
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="start.html">Get Started</a></li>
-        </ul>
-      </div>
-
-      <!-- Platforms -->
-      <div class="footer-col">
-        <span class="footer-col-heading">Platforms</span>
-        <ul class="footer-col-links">
-          <li><a href="#">Sparx Maths</a></li>
-          <li><a href="#">Sparx Reader</a></li>
-          <li><a href="#">Sparx Science</a></li>
-          <li><a href="#">Seneca</a></li>
-          <li><a href="#">Languagenut</a></li>
-        </ul>
-      </div>
-
-      <!-- Legal -->
-      <div class="footer-col">
-        <span class="footer-col-heading">Legal</span>
-        <ul class="footer-col-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Refund Policy</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <span class="footer-copy">&copy; 2026 ArcAI. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Discord</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="config.js"></script>
-<script src="js/testimonials.js"></script>
-<script src="js/main.js"></script>
+  <script src="config.js"></script>
+  <script src="testimonials.js"></script>
+  <script src="js/main.js"></script>
+  <script src="protect.js"></script>
 </body>
 </html>
