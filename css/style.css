@@ -513,24 +513,28 @@ header.scrolled, #site-header.scrolled {
 @media (min-width: 640px)  { .platforms-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (min-width: 1024px) { .platforms-grid { grid-template-columns: repeat(5, 1fr); } }
 
-/* Mobile: horizontal auto-scroll strip */
+/* Mobile: stacked full-width cards */
 @media (max-width: 639px) {
   .platforms-grid {
     display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    flex-direction: column;
     gap: 0.75rem;
-    padding-bottom: 0.75rem;
-    /* hide scrollbar visually */
-    scrollbar-width: none;
   }
-  .platforms-grid::-webkit-scrollbar { display: none; }
   .platforms-grid .platform-card {
-    flex: 0 0 72vw;
-    max-width: 280px;
-    scroll-snap-align: start;
+    width: 100%;
+  }
+  .platform-card-inner {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+  .platform-logo-wrap {
+    flex-shrink: 0;
+  }
+  .platform-features {
+    gap: 0.3rem;
   }
 }
 
