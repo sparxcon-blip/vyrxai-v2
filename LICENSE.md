@@ -4,11 +4,11 @@ Copyright (c) 2026 uh.izaak. All rights reserved.
 This software and its associated source code (the "Software") constitute the 
 original proprietary work of uh.izaak (the "Author"). 
 
-The Author hereby grants VyrxAI a non-exclusive, non-transferable, and 
+The Author hereby grants ArcAI a non-exclusive, non-transferable, and 
 revocable license to use, deploy, and display the Software solely for the 
-internal operation of the VyrxAI website and its associated services.
+internal operation of the ArcAI website and its associated services.
 
-RESTRICTIONS: VyrxAI shall not:
+RESTRICTIONS: ArcAI shall not:
 - Sublicense, sell, distribute, or otherwise transfer the Software to any third party;
 - Remove, alter, or obscure any copyright notices or proprietary attributions;
 - Utilize the Software for any purpose external to the VyrxAI service.
