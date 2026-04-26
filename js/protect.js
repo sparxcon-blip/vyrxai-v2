@@ -1,7 +1,7 @@
-/* protect.js - VyrxAI anti-inspect layer */
+/* inspect protection */
 (function () {
 
-  /* 1. Right-click - show 'no' at cursor, refresh listener every 2s */
+  /* no */
   function showNo(e) {
     e.preventDefault();
     var el = document.createElement('div');
@@ -19,14 +19,14 @@
   attachRightClick();
   setInterval(attachRightClick, 2000);
 
-  /* 2. Block devtools keyboard shortcuts */
+  /* shortcuts */
   document.addEventListener('keydown', function(e) {
     if (e.key === 'F12') { e.preventDefault(); return false; }
     if (e.ctrlKey && e.shiftKey && ['I','i','J','j','C','c'].includes(e.key)) { e.preventDefault(); return false; }
     if (e.ctrlKey && ['U','u'].includes(e.key)) { e.preventDefault(); return false; }
   });
 
-  /* 3. DevTools size detection */
+  /* size */
   var devtoolsOpen = false;
   function checkSize() {
     var threshold = 160;
@@ -38,7 +38,7 @@
   }
   setInterval(checkSize, 1000);
 
-  /* 4. console.log toString trick */
+  /* console */
   var detector = /./;
   detector.toString = function() {
     if (!devtoolsOpen) { devtoolsOpen = true; window.location.href = '/dumbass.html'; }
